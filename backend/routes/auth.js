@@ -10,7 +10,8 @@ const createToken = () => {
   return jwt.sign({}, 'secret', { expiresIn: '1h' })
 }
 
-//test
+//test testing
+
 router.post('/login', async (req, res, next) => {
   const email = await db
     .getDb()
